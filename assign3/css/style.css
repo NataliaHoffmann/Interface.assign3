@@ -1,0 +1,152 @@
+html{/* The code that applies to all html */
+    text-align: center; /* align horizontally */
+}
+
+header{
+    background-image: url(../img/mars.jpg); /* image of mars for the header */
+    width: 100%; /* adjusting the width */
+    height: 800px; /* adjusting the height */
+    background-size: cover; /* the image to fill the whole header */
+    background-position: center; /* center the image */
+    
+}
+section{
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px; /* apply margin after each section*/
+}
+.separation{ /* this is the section to separate contents, it is just to look better */
+    background-color: black; /* background color black to contrast with the other parts */
+    height: 50px; /* adjusting the height */
+    margin: 0;
+}
+.content{
+    margin-left: 20%; /* just some margin */
+    margin-right: 20%; /* just some margin */
+    text-align: center;
+}
+p{
+    margin:0;
+    padding: 15px; /* distance before and after <p> tags */
+}
+a{
+    color:inherit; /* To cancel the blue on the <a> that links the website */
+}
+.but{
+    text-transform: uppercase; /* Transforming into uppercase for better contrast between "before" content and "after" content */
+    font-weight: bold; /* making it bold for the same reason: contrast */
+    background: linear-gradient(135deg, #c94413, #ff8c00);
+    font-size: 50px; /* font size */
+    padding: 0; /* no padding */
+    margin: 0; /* no margin */
+    margin-top: 0; /* no margin top */
+}
+/* I decided to catch the viewer eyes by separating the chocolate into their 3 parts and want the user to desire it */
+/* Flexbox container to hold the 3 sections */
+.chocolayers {
+    display: flex; /* Flexbox */
+    justify-content:center; /* center content */
+    gap: 10px; /* space between sections */
+    padding: 10px; /* padding around the container */
+}
+/* the codes that all layers share */
+#crunchy, #caramel, #chocolate {
+    background-size: cover; /* the image to cover the whole section */
+    width: 33%; /* width 30% (dividing by 100% by 3 and with some gap */
+    height: 200px; /* adjusting the height */
+    text-align: center; /* align center horizontally */
+    display: flex; /* flexbox to center text inside the flexbox */
+    justify-content: center; /* horizontally center */
+    align-items: center; /* vertically center */
+}
+#crunchy{/* First part is the crunchy part, it is made by nougat */
+    background-image: url(../img/cruchy.jpg); /* image of the crunchy part of mars */
+    background-attachment: fixed; /* image attached to the background */
+}
+#caramel{/* Second part is the caramel part */
+    background-image: url(../img/caramel.jpg); /* image of the caramel part of mars */
+    background-attachment: fixed; /* image attached to the background */
+}
+#chocolate{/* Third part is the chocolate part */
+    background-image: url(../img/chocolate1.jpg); /* image of the chocolate part of mars */
+    background-attachment: fixed; /* image attached to the background */
+}
+.chocolayers h2{ 
+    font-size: 50px; /* font-size for the layers part */
+    padding: 10px; /* padding around it */
+    color: white; /* font color : white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow so the white does not look so raw */
+}
+.separation-white{ /* this is the section to separate contents, but now white */
+    background-color: white; /* background color white */
+    height: 50px; /* adjusting the height */
+}
+.handwritten{ /* This section will have a personal touch as if someone write on it with their heart */
+    font-family: "Permanent Marker", cursive; /* font from google fonts */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: white; /* White font */
+    background-color: #3e2723; /* To be like chocolate */
+    margin-top: 5px; /* Some white margin to look better */
+    margin-bottom: 5px;
+}
+.photo-2{
+    /* Adding a image and setting up the height, and repeating horizontally */
+    background-image: url(../img/details.jpg); 
+    height: 400px;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+.photo-3 img{
+    /* Adding a image and setting up how it will stay on the section with margin, size and position */
+    width: 100%;
+    height: auto;
+    margin:0;
+}
+.photo-table {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically (if needed) */
+}
+.photo-table img{
+    /* Setting up the image margin and size */
+    height: auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer {
+    /* Adding some padding to better look, because it was too busy */
+    padding: 20px 0;
+}
+footer img{
+    /* Setting up the logo height */
+    height: 30px;
+}
+footer div{
+    /* Adding some padding on the div as well */
+    padding: 5px;
+}
+fieldset{
+    /* Adding some width so the fieldset does not take the full page, in this case only 1/2 will be taken */
+    width: 50%;
+}
+.form{
+    /* Flexbox and organizing everything on the center */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.input{/* Flexbox and adding space between name and email inputs */
+    display: flex; 
+    gap: 20px;
+}
+.form input {
+    /* padding, margin around the inputs, height and width of the input box, and font-size */
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    height: min-content;
+    font-size: medium;
+}
